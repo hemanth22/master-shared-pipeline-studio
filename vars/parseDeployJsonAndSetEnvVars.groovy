@@ -1,3 +1,5 @@
+import groovy.json.JsonSlurper
+
 def parseDeployJsonAndSetEnvVars(String jsonFilePath) {
     def jsonFile = new File(jsonFilePath)
     def jsonSlurper = new groovy.json.JsonSlurper()
